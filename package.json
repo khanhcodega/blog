@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "beautiful":"prettier --single-quote --trailing-comma all --write 'src/**/*.{js,json,scss}'  --tab-width 4",
+    "prepare": "husky",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +27,12 @@
   "lint-staged": {
       "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all  --tab-width 4"
   },
-  
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+
   "dependencies": {
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
