@@ -14,10 +14,10 @@ app.use(express.json());
 // console.log('PATH : ' + path.join(__dirname, 'public'));
 
 // HTTP logger
-                                        app.use(morgan('combined'));
+                                app.use(morgan('combined'));
 
 //template engine
-                                    app.engine(
+                        app.engine(
     'hbs',
     engine({
         extname: '.hbs',
