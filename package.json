@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "bootstrap": "^5.3.3",
-    "husky": "^4.2.5",
+    "husky": "^4.3.8",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.0",
     "sass": "^1.71.1"
